@@ -1,54 +1,50 @@
 <template>
   <div id="app">
     <header>
-      <span>Vue.js PWA</span>
+      <Navbar></Navbar>
     </header>
-    <main>
-      <img src="./assets/logo.png" alt="Vue.js PWA">
+    <main class="d-flex">
       <router-view></router-view>
     </main>
   </div>
 </template>
 
 <script>
+import navbar from './components/Nav'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {'Navbar': navbar}
 }
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400|Roboto:300,400&display=swap');
+
 body {
   margin: 0;
+  background-color: #263238;
+}
+
+a, a:visited {
+  color: #C7503C;
+}
+
+a:hover, a:focus, a:active {
+  color: #D78476;
+  text-decoration: none;
 }
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Comfortaa', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  color: #ECEFF1;
 }
 
 main {
   text-align: center;
   margin-top: 40px;
-}
-
-header {
-  margin: 0;
-  height: 56px;
-  padding: 0 16px 0 24px;
-  background-color: #35495E;
-  color: #ffffff;
-}
-
-header span {
-  display: block;
-  position: relative;
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: .02em;
-  font-weight: 400;
-  box-sizing: border-box;
-  padding-top: 16px;
+  min-height: 60vh;
 }
 </style>

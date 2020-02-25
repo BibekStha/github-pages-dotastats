@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'hello',
+  name: 'Home',
   data () {
     return {
       msg: 'Welcome to Dota2 Statistics Website'

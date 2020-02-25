@@ -9,14 +9,14 @@ export default new Router({
   mode: 'history',
   routes: [
     {
+      path: '/heroes',
+      name: 'Heroes',
+      component: Heroes
+    },
+    {
       path: '/',
       name: 'Home',
       component: Home
-    },
-    {
-      path: '/hereos',
-      name: 'Heroes',
-      component: Heroes
     }
 
   ]

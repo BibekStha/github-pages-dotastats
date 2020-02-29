@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="lg" type variant="">
+  <b-navbar toggleable="lg" type="dark" variant="">
     <div class="container">
       <b-navbar-brand href="#" id="page_title">
       <img src="@/assets/logo.png" alt="Vue.js PWA">DotaStats</b-navbar-brand>
@@ -38,9 +38,21 @@ export default {}
   font-size: 1.5em;
 }
 
+@media screen  and (max-width: 540px) {
+  #page_title {
+    letter-spacing: .2em;
+    font-size: 1.2em;
+  }
+}
+
 #page_title img { 
   max-height: 50px;
   width: auto;
   margin-right: .5em;
 }
+
+.navbar-toggler {
+  border: 1px solid #C7503C;
+}
+
 </style>

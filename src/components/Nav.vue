@@ -1,10 +1,10 @@
 <template>
-  <b-navbar toggleable="lg" type="dark" variant="">
+  <b-navbar toggleable="lg" type="" variant="">
     <div class="container">
       <b-navbar-brand href="#" id="page_title">
       <img src="@/assets/logo.png" alt="Vue.js PWA">DotaStats</b-navbar-brand>
 
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+      <b-navbar-toggle class="navbar-dark" target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
 
